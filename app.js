@@ -8,11 +8,11 @@ const contract = new web3.eth.Contract(abi, address)
 
 
 contract.getPastEvents(
-    'allEvents', 
-    { 
-        fromBlock: 14780256, 
+    'PairCreated',
+    {
+        fromBlock: 14780256,
         toBlock: 'latest'
-    }, 
+    },
     (err, events) => { console.log(events) }
   )
 // contract.getPastEvents('allEvents', {
